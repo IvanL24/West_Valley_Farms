@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./../img/farm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom:  2%;
+}
+
+form {
+    border: 1px solid red;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10%;
+}
+
+#radio {
+    display: flex;
+}
+
+#deliveryOption p{    
+    margin: 10px 0 5px 0 ;
+}
+
+#deliveryOption select {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.info {
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding-bottom: 5%;
+}
+
+.hamper .name {
+    width: 50%;
+}
+
+.hamper .price {
+    width: 20%;
+}
+
+.hamper .amount {
+    width: 20%;
+}
+
+.check {
+    display: none;
+    border: 1px solid red;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.checkOut p{
+    margin: 5px 0 5px 0;
+}
+
+.submit {
+    background-color: white;
+    border-radius: 10px;
+}

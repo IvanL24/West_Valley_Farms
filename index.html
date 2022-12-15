@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>West Valley Farms</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo"><img src="./img/Group 1.png" alt="logo"></a>
+    </header>
+    <div id="container" class="container">
+        <form id="Form1" novalidate >
+            <div class="info">
+                <table id="information">
+                    <th colspan="2">
+                        <h2>West Valley Farms</h2>
+                    </th>
+                    <tr>
+                        <td><input type="date" name="date" id="date" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Client name">Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input pattern="[A-Za-z]" type="text" placeholder="First" id="firstName" required></td>
+                        <td><input pattern="[A-Za-z]" type="text" placeholder="Last" id="lastName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Street Address">Street Address:</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Postal Code">Postal Code:</label></td>
+                        <td><label for="email">Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" type="text" required></td>
+                        <td><input type="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="phone" name="" id=""></td>
+                        <td id="radio"><input type="radio">Personal<input type="radio">Business</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="hamper">
+                <table id="items">
+                    <tr>
+                        <td class="name"><h4>Hamper name</h4></td>
+                        <td class="price"><h4>Prices</h4></td>
+                        <td class="amount"><h4>Amount</h4></td>
+                    </tr>
+                    <tr>
+                        <td>Vegetable Hamper (20kg)</td>
+                        <td>$30.00</td>
+                        <td><input id="vegetable" type="number" min="0" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Fruit Hamper (10kg)</td>
+                        <td>$20.00</td>
+                        <td><input id="fruit" type="number" min="0" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Chickens (1pc)</td>
+                        <td>$7.00</td>
+                        <td><input id="chicken" type="number" min="0" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Pork (1kg)</td>
+                        <td>$5.00</td>
+                        <td><input id="pork" type="number" min="0" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Total: </td>
+                        <td></td>
+                        <td><p id="totalPrice"></p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" id="deliveryOption">
+                            <p>Delivery option</p>
+                            <select name="delivery" id="deliveryType">
+                                <option value="Pick-up">Pick-up</option>
+                                <option value="Delivery">Delivery</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="submit" id="submit" onclick="buttonClicked(); return false;">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <!-- After clicked submit -->
+    <div id="checkout" class="check">
+        <table class="checkOut">
+            <tr>
+                <td><p id="name"></p></td>
+            </tr>
+            <tr>
+                <td><p id="checkOutAddress"></p></td>
+            </tr>
+            <tr>
+                <td><p id="delivery"></p></td>
+            </tr>
+            <tr>
+                <td><p><b>Order: </b></p></td>
+            </tr>
+            <tr>
+                <td><p id="checkVegetable"></p></td>
+            </tr>
+            <tr>
+                <td><p id="checkFruit"></p></td>
+            </tr>
+            <tr>
+                <td><p id="checkChicken"></p></td>
+            </tr>
+            <tr>
+                <td><p id="checkPork"></p></td>
+            </tr>
+            <tr>
+                <td><p id="totalValue"></p></td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <script src="./js/script.js" async></script>
+
+</body>
+</html>
